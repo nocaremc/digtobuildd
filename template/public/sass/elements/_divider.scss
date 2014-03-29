@@ -1,0 +1,10 @@
+.row.divider {
+    height: 8px;
+    min-height: 8px;
+    background: $yellow_glow;
+    box-shadow: inset 0px 0px 0px 0px transparent, inset 0px 8px 2px -7px $yellow_glow_depth;
+    &.divider-danger {
+        background: $blue_crystal;
+        box-shadow: inset 0px 0px 0px 0px transparent, inset 0px 8px 2px -7px $blue_crystal * 0.6;
+    }
+}
