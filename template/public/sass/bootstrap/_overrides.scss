@@ -1,20 +1,17 @@
-/* Because the padding does not exist on the container, we move it to the body.'
- * I don't recall my resoning for this... FISHTACOS */
-body {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 .container {
-    /* Layout is full-width. Requires removal of padding */
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    > .row {
-        > [class*="col-md"] {
-            > div:first-child {
-                margin: 60px auto;
-            }
-        }
+}
+
+.row {
+    padding-top: 20px;
+    
+    &.divider,
+    &.bg-primary + .bg-primary,
+    &.bg-success + .bg-success,
+    &.bg-info + .bg-info,
+    &.bg-warning + .bg-warning,
+    &.bg-danger + .bg-danger {
+        padding-top: 0;
     }
 }
 
